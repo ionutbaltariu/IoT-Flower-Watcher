@@ -11,16 +11,17 @@
                 margin: 0;
                 padding: 0;
                 font-family: "Karma", sans-serif;
-                /* background-image: linear-gradient(rgba(26, 12, 226, 0.637), rgb(156, 25, 231)); */
                 background-image: url('https://www.weatherbug.com/images/cloudy-night_l.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
                 background-attachment: fixed;
             }
 
             footer {
                 position: fixed;
-                text-align: right;
+                text-align: center;
                 bottom: 0;
-                width: 99%; 
+                width: 100%; 
                 color: #ffffff;
             }
             header {
@@ -43,7 +44,7 @@
     <body>
         <header>
             <h1>
-                Site pentru SM
+                Internet of Things Flower Monitoring
             </h1>
         </header>
         <main >
@@ -53,10 +54,10 @@
                     <rect width="600" height="400" rx="30" ry="30"
                     style="fill:rgb(255, 255, 255); opacity: 0.25;"/>
                   Sorry, your browser does not support inline SVG.
-		  <text fill="#ffffff" font-size="30" font-family="Verdana" x="150" y="70">Indicatori de creștere:</text>
-		  <text fill="#ffffff" font-size="25" font-family="Verdana" x="60" y="160">Umiditatea solului: {{soil_humidity}}%</text>
-		  <text fill="#ffffff" font-size="25" font-family="Verdana" x="60" y="240">Temperatura camerei: {{temperature}}&degC</text>
-		  <text fill="#ffffff" font-size="25" font-family="Verdana" x="60" y="320">Umiditatea aerului: {{air_humidity}}%</text>
+                  <text fill="#ffffff" font-size="30" font-family="Verdana" x="150" y="70">Indicatori de creștere:</text>
+                  <text fill="#ffffff" font-size="25" font-family="Verdana" x="60" y="160">Umiditatea solului:</text>
+                  <text fill="#ffffff" font-size="25" font-family="Verdana" x="60" y="240">Temperatura camerei:</text>
+                  <text fill="#ffffff" font-size="25" font-family="Verdana" x="60" y="320">Umiditatea aerului:</text>
                   </svg>
             </div>
         </main>
