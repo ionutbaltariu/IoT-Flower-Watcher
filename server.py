@@ -32,15 +32,20 @@ def get_values_from_serial():
             print(last_soil_humidity_value)
         except json.decoder.JSONDecodeError:
             pass
+        except serial.serialutil.SerialException:
+            pass
 
 
 def read_temperature_and_humidity():
     global last_air_humidity_value
     global last_temperature_value
     while True:
-        last_air_humidity_value, last_temperature_value = Adafruit_DHT.read(DHT_SENSOR, DHT_PIN)
-        if last_air_humidity_value is None and last_temperature_value is None:
+        air_humidity, temperature = Adafruit_DHT.read(DHT_SENSOR, DHT_PIN)
+        if air_humidity is None and temperature is None:
             print("error")
+        else:
+            last_air_humidity_value = air_humidity
+            last_temperature_value = temperature
         time.sleep(30)
 
 
@@ -50,4 +55,4 @@ dht11_thread = threading.Thread(target=read_temperature_and_humidity)
 if __name__ == '__main__':
     moisture_thread.start()
     dht11_thread.start()
-    app.run(debug=True, host='0.0.0.0')
+    app.run(host='0.0.0.0')
