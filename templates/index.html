@@ -18,7 +18,7 @@
             }
 
             footer {
-                position: fixed;
+                /* position: fixed; */
                 text-align: center;
                 bottom: 0;
                 width: 100%; 
@@ -39,6 +39,15 @@
                 text-transform: uppercase;
                 letter-spacing: .2em;
             }
+            #btn{
+                padding:10px 30px;
+                background-color:#0e62b1;
+                border-radius: 25px;
+                color:white;
+                margin:auto;
+                font-size: 20px;
+                margin-left: 10px;
+            }
         </style>
     </head>
     <body>
@@ -49,20 +58,24 @@
         </header>
         <main >
             <!-- <h2>Bună!</h2> -->
-            <div style="text-align: center;">
-                <svg width="600" height="400">
-                    <rect width="600" height="400" rx="30" ry="30"
+            <div style=" display: flex; justify-content: center; align-items: center;">
+                <svg width="600" height="390">
+                    <rect width="600" height="370" rx="30" ry="30"
                     style="fill:rgb(255, 255, 255); opacity: 0.25;"/>
                   Sorry, your browser does not support inline SVG.
-                  <text fill="#ffffff" font-size="30" font-family="Verdana" x="150" y="70">Indicatori de creștere:</text>
-		  <text fill="#ffffff" font-size="25" font-family="Verdana" x="60" y="160">Umiditatea solului: {{soil_humidity}}%</text>
-		  <text fill="#ffffff" font-size="25" font-family="Verdana" x="60" y="240">Temperatura camerei: {{temperature}} &degC</text>
-		  <text fill="#ffffff" font-size="25" font-family="Verdana" x="60" y="320">Umiditatea aerului: {{air_humidity}}%</text>
+                  <text fill="#ffffff" font-size="30" font-family="Verdana" x="150" y="70">Environmental data:</text>
+                    <text fill="#ffffff" font-size="25" font-family="Verdana" x="150" y="160">Soil humidity: {{soil_humidity}}%</text>
+                    <text fill="#ffffff" font-size="25" font-family="Verdana" x="150" y="240">Room temperature: {{temperature}} &degC</text>
+                    <text fill="#ffffff" font-size="25" font-family="Verdana" x="150" y="320">Air humidity: {{air_humidity}}%</text>
                   </svg>
             </div>
+            <div style="text-align: center;">
+                <button id="btn" type="submit">Play music</button>
+            </div>
+            <br />
         </main>
         <footer>
-            &copy;.2021. Sisteme cu microprocesoare
+            &copy;.2021. Microprocessors Systems
         </footer>
     </body>
 </html>
