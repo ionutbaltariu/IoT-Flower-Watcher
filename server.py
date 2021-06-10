@@ -18,7 +18,6 @@ DHT_PIN = 4
 def index():
     return render_template('index.html', soil_humidity=str(last_soil_humidity_value), temperature=str(last_temperature_value),
             air_humidity=str(last_air_humidity_value))
-    print('am ajuns pana aici')
 
 def get_values_from_serial():
     global last_soil_humidity_value 
