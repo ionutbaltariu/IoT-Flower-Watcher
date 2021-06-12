@@ -1,6 +1,8 @@
 # IoT Flower Monitoring
 Repository for the Project at the Microprocessor Systems Discipline - consists of a simple flower monitoring application made using Python, a Raspberry Pi 3, Arduino, DHT11, a soil moisture sensor and a buzzer.
 
+## [Project on Hackster](https://www.hackster.io/flowerpower/flower-monitoring-using-raspberry-pi-arduino-fbcad8)
+
 # Story
 
 Imagine what life would be like without our inanimate green friends.. Flowers, beyond the fact that they are excellent items for decoration of various environments, are actual stress reducers and nature maintainers ( producing oxygen through photosynthesis).
