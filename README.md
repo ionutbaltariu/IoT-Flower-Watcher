@@ -49,3 +49,13 @@ python3 server.py
 ```
 <your_raspberry_pi_local_ip>:5000 
 ```
+
+# Key concepts learned:
+
+* teamwork: project planning, task allocation
+* improved knowledge about threading, Flask, UART, Raspberry Pi 3, Arduino
+* using Raspberry Pi 3 pins and various sensors/actuators
+* Linux administration
+* ssh
+* basic Electronics knowledge
+* sending emails with stmplib and MIMEText
